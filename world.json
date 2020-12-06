@@ -1,0 +1,162 @@
+{
+    "width": 400,
+    "height": 400,
+    "max_bounces": 30,
+    "debug_surfaces": false,
+    "camera": {
+        "origin": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -4.5
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 0.0
+        },
+        "fov": 90.0
+    },
+    "geometries": {
+        "center": {
+            "type": "sphere",
+            "center": {
+                "x": -1.7,
+                "y": 0.0,
+                "z": -1.5
+            },
+            "radius": 0.5
+        },
+        "glass": {
+            "type": "sphere",
+            "center": {
+                "x": 0.0,
+                "y": 0.4,
+                "z": -3.5
+            },
+            "radius": 0.5
+        },
+        "glass2": {
+            "type": "sphere",
+            "center": {
+                "x": 0.0,
+                "y": 0.4,
+                "z": -3.5
+            },
+            "radius": -0.465
+        },
+        "right": {
+            "type": "sphere",
+            "center": {
+                "x": -0.5,
+                "y": 0.0,
+                "z": -2.3
+            },
+            "radius": 0.5
+        },
+        "ground": {
+            "type": "sphere",
+            "center": {
+                "x": 0.0,
+                "y": -100.5,
+                "z": -2.0
+            },
+            "radius": 100.0
+        },
+        "ground2": {
+            "type": "sphere",
+            "center": {
+                "x": 102.0,
+                "y": 0.5,
+                "z": -2.0
+            },
+            "radius": 100.0
+        },
+        "ground3": {
+            "type": "sphere",
+            "center": {
+                "x": -40.0,
+                "y": 0.5,
+                "z": -100.0
+            },
+            "radius": 100.0
+        },
+        "ground4": {
+            "type": "sphere",
+            "center": {
+                "x": -20.0,
+                "y": 100.5,
+                "z": 0.0
+            },
+            "radius": 100.0
+        }
+    },
+    "materials": {
+        "glass": {
+            "type": "dieletric",
+            "albedo": {
+                "x": 0.95,
+                "y": 0.92,
+                "z": 0.95
+            },
+            "refraction": 1.5
+        },
+        "center": {
+            "type": "diffuse",
+            "albedo": {
+                "x": 0.9,
+                "y": 0.2,
+                "z": 0.2
+            }
+        },
+        "right": {
+            "type": "metal",
+            "albedo": {
+                "x": 0.9,
+                "y": 0.9,
+                "z": 0.9
+            },
+            "fuzz": 0.0
+        },
+        "ground": {
+            "type": "diffuse",
+            "albedo": {
+                "x": 0.3,
+                "y": 0.7,
+                "z": 0.4
+            }
+        }
+    },
+    "objects": [
+        {
+            "material": "glass",
+            "geometry": "glass"
+        },
+        {
+            "material": "glass",
+            "geometry": "glass2"
+        },
+        {
+            "material": "right",
+            "geometry": "right"
+        },
+        {
+            "material": "center",
+            "geometry": "center"
+        },
+        {
+            "material": "ground",
+            "geometry": "ground"
+        },
+        {
+            "material": "ground",
+            "geometry": "ground2"
+        },
+        {
+            "material": "ground",
+            "geometry": "ground3"
+        },
+        {
+            "material": "ground",
+            "geometry": "ground4"
+        }
+    ]
+}
